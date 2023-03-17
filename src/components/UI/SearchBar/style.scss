@@ -1,0 +1,36 @@
+@use "../../../functions" as *;
+
+.searchBar {
+  width: fit-content;
+  max-width: toRem(500);
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: var(--ligthBlue);
+
+  &__button {
+    position: absolute;
+    right: 3%;
+    top: 28%;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  &__icon_search {
+    position: absolute;
+    right: 90%;
+    top: 26%;
+  }
+  &__search {
+    width: toRem(500);
+    height: toRem(30);
+    border-radius: toRem(48);
+    padding: 0 4rem;
+    border: toRem(1) solid var(--gray);
+    text-align: center;
+
+    &:focus {
+      outline: toRem(1) solid var(--darkBlue);
+    }
+  }
+}

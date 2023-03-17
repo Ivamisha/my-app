@@ -1,0 +1,18 @@
+:root {
+  --black: #122945;
+  --primaryColor: #ffffff;
+  --secondaryColor: #091336;
+  --green: #28a879;
+  --yellow: #ffd500;
+  --red: #ea1a4f;
+  --darkBlue: #0024cb;
+  --blue: #005ff8;
+  --ligthBlue: #d8e4fb8f;
+  --gray: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--gray);
+}

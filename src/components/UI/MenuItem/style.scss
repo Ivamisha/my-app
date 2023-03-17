@@ -1,0 +1,12 @@
+@use "../../../functions" as *;
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: toRem(16);
+  color: var(--primaryColor);
+  height: toRem(52);
+  cursor: pointer;
+  gap: toRem(13);
+}

@@ -1,0 +1,12 @@
+@use "../../../functions" as *;
+
+.button-ui {
+  min-width: toRem(200);
+  font-size: toRem(16);
+  height: toRem(52);
+  background: var(--blue);
+  color: var(--primaryColor);
+  position: relative;
+  border: none;
+  border-radius: toRem(4);
+}
