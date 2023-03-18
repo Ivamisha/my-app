@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { IProgressBar } from "./interface";
+import { IProgressBarProps } from "./interface";
 import "./style.scss";
 
-const ProgressBar: FC<IProgressBar> = ({
+export const ProgressBar: FC<IProgressBarProps> = ({
   text,
   colorText,
   count,
@@ -14,7 +14,7 @@ const ProgressBar: FC<IProgressBar> = ({
 
       <span
         className={`progress-bar__text_colored ${linearColor}`}
-        style={{ color: linearColor }}
+        // style={{ color: linearColor }}
       >
         {colorText}
       </span>
@@ -28,5 +28,3 @@ const ProgressBar: FC<IProgressBar> = ({
     </div>
   </div>
 );
-
-export default ProgressBar;

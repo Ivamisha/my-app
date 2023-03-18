@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { IButton } from "./interface";
+import { IButtonProps } from "./interface";
 import "./style.scss";
 
-const Button: FC<IButton> = (props) => {
+export const Button: FC<IButtonProps> = (props) => {
   const { icon, children } = props;
   return (
     <button className="button-ui" {...props}>
@@ -12,4 +12,3 @@ const Button: FC<IButton> = (props) => {
     </button>
   );
 };
-export default Button;

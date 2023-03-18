@@ -1,6 +1,6 @@
 import { FC } from "react";
-import ProgressBar from "../UI/ProgressBar/ProgressBar";
-import SearchBar from "../UI/SearchBar/SearchBar";
+
+import { ProgressBar, SearchBar } from "../UI";
 
 import "./style.scss";
 

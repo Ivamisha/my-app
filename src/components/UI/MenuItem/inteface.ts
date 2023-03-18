@@ -1,7 +1,5 @@
-import { FC } from "react";
-
-export interface IMenuItem {
+export interface IMenuItemProps {
   id?: number;
   text: string;
-  icon: FC<React.SVGProps<SVGSVGElement>> | React.ReactNode;
+  icon: React.ReactNode;
 }

@@ -1,13 +1,12 @@
 import { FC } from "react";
-import { IMenuItem } from "./inteface";
+import { IMenuItemProps } from "./inteface";
 import "./style.scss";
 
-const MenuItem: FC<IMenuItem> = ({ icon, text }) => {
+export const MenuItem: FC<IMenuItemProps> = ({ icon, text }) => {
   return (
     <div className="menu-item">
-      <>{icon}</>
+      {icon}
       <span className="menu-item__text">{text}</span>
     </div>
   );
 };
-export default MenuItem;

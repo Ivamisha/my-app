@@ -1,2 +1,2 @@
-export interface ISearchBar
+export interface ISearchBarProps
   extends React.InputHTMLAttributes<HTMLInputElement> {}

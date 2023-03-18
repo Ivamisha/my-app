@@ -1,64 +1,55 @@
-import { IMenuItem } from "./components/UI/MenuItem/inteface";
-import { ReactComponent as Settings } from "./assets/svg/settings.svg";
-import { ReactComponent as Calls } from "./assets/svg/calls.svg";
-import { ReactComponent as Briefcase } from "./assets/svg/briefcase.svg";
-import { ReactComponent as Documents } from "./assets/svg/documents.svg";
-import { ReactComponent as Human } from "./assets/svg/human.svg";
-import { ReactComponent as Library } from "./assets/svg/library.svg";
-import { ReactComponent as Mail } from "./assets/svg/mail.svg";
-import { ReactComponent as Orders } from "./assets/svg/orders.svg";
-import { ReactComponent as People } from "./assets/svg/people.svg";
-import { ReactComponent as Vector } from "./assets/svg/vector.svg";
+import { IMenuItemProps } from "./components/UI/MenuItem/inteface";
+import { SvgIcon } from "./components/UI/SvgIcon/SvgIcon";
 
-export const menuItemArray: IMenuItem[] = [
+export const menuItemArray: IMenuItemProps[] = [
   {
     id: 1,
-    icon: <Vector />,
+    icon: <SvgIcon nameSvg="Vector" />,
     text: "Итоги",
   },
   {
     id: 2,
-    icon: <Orders />,
+    icon: <SvgIcon nameSvg="Orders" />,
     text: "Заказы",
   },
   {
     id: 3,
-    icon: <Mail />,
+    icon: <SvgIcon nameSvg="Mail" />,
     text: "Сообщения",
   },
   {
     id: 4,
-    icon: <Calls />,
+    icon: <SvgIcon nameSvg="Calls" />,
     text: "Звонки",
   },
   {
     id: 5,
-    icon: <People />,
+    icon: <SvgIcon nameSvg="People" />,
     text: "Контрагенты",
   },
   {
     id: 6,
-    icon: <Documents />,
+    icon: <SvgIcon nameSvg="Documents" />,
     text: "Документы",
   },
   {
     id: 7,
-    icon: <Human />,
+    icon: <SvgIcon nameSvg="Human" />,
     text: "Исполнители",
   },
   {
     id: 8,
-    icon: <Briefcase />,
+    icon: <SvgIcon nameSvg="Human" />,
     text: "Отчеты",
   },
   {
     id: 9,
-    icon: <Library />,
+    icon: <SvgIcon nameSvg="Library" />,
     text: "База знаний",
   },
   {
     id: 10,
-    icon: <Settings />,
+    icon: <SvgIcon nameSvg="Settings" />,
     text: "Настройки",
   },
 ];

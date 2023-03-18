@@ -1,4 +1,13 @@
-@function toRem($value) {
-  $remValue: ($value / 16) + rem;
-  @return $remValue;
+@use 'sass:math';
+
+@function toRem($size) {
+  @if unitless($size) {
+    $remSize: math.div($size, 16);
+
+    @return #{$remSize}rem;
+  }
+
+  @else {
+    @error 'Size must be a unitless number.';
+  }
 }
