@@ -1,0 +1,24 @@
+@use "../../../functions" as *;
+
+.data-picker {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  width: toRem(145);
+  height: toRem(40);
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__information-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: toRem(14);
+    color: var(--blue);
+    min-width: 40%;
+    width: fit-content;
+  }
+}

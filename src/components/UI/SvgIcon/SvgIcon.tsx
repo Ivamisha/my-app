@@ -1,4 +1,4 @@
-import { FC, JSXElementConstructor, ReactElement } from "react";
+import { FC } from "react";
 
 import { ReactComponent as Settings } from "src/assets/svg/settings.svg";
 import { ReactComponent as Calls } from "src/assets/svg/calls.svg";
@@ -25,22 +25,22 @@ export const SvgComponents: Record<string, JSX.Element> = {
   People: <People />,
   Vector: <Vector />,
   Decline: <Decline />,
-  SearchIcon: <SearchIcon />
-}
+  SearchIcon: <SearchIcon />,
+};
 
 export const enum svgNameEnum {
-  Settings = 'Settings',
-  Calls = 'Calls',
-  Briefcase = 'Briefcase',
-  Documents = 'Documents',
-  Human = 'Human',
-  Library = 'Library',
-  Mail = 'Mail',
-  Orders = 'Orders',
-  People = 'People',
-  Vector = 'Vector',
-  Decline = 'Decline',
-  SearchIcon = 'SearchIcon'
+  Settings = "Settings",
+  Calls = "Calls",
+  Briefcase = "Briefcase",
+  Documents = "Documents",
+  Human = "Human",
+  Library = "Library",
+  Mail = "Mail",
+  Orders = "Orders",
+  People = "People",
+  Vector = "Vector",
+  Decline = "Decline",
+  SearchIcon = "SearchIcon",
 }
 
 export interface IsvgIconProps {
@@ -51,7 +51,5 @@ export interface IsvgIconProps {
 export const SvgIcon: FC<IsvgIconProps> = (props) => {
   const { nameSvg, className } = props;
 
-  return <div className={className}>
-    {SvgComponents[nameSvg]}
-  </div>
+  return <div className={className}>{SvgComponents[nameSvg]}</div>;
 };
