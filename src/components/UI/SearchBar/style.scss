@@ -31,6 +31,9 @@
 
     &:focus {
       outline: toRem(1) solid var(--darkBlue);
+      &::placeholder {
+        opacity: 0.5;
+      }
     }
   }
 }

@@ -10,8 +10,10 @@ import { ReactComponent as Mail } from "src/assets/svg/mail.svg";
 import { ReactComponent as Orders } from "src/assets/svg/orders.svg";
 import { ReactComponent as People } from "src/assets/svg/people.svg";
 import { ReactComponent as Vector } from "src/assets/svg/vector.svg";
+import { ReactComponent as Decline } from "src/assets/svg/decline.svg";
+import { ReactComponent as SearchIcon } from "src/assets/svg/search.svg";
 
-export const NameSvg: Record<string, ReactElement<void, JSXElementConstructor<FC<React.SVGProps<SVGSVGElement>>>>> = {
+export const SvgComponents: Record<string, JSX.Element> = {
   Settings: <Settings />,
   Calls: <Calls />,
   Briefcase: <Briefcase />,
@@ -21,7 +23,9 @@ export const NameSvg: Record<string, ReactElement<void, JSXElementConstructor<FC
   Mail: <Mail />,
   Orders: <Orders />,
   People: <People />,
-  Vector: <Vector />
+  Vector: <Vector />,
+  Decline: <Decline />,
+  SearchIcon: <SearchIcon />
 }
 
 export const enum svgNameEnum {
@@ -34,17 +38,20 @@ export const enum svgNameEnum {
   Mail = 'Mail',
   Orders = 'Orders',
   People = 'People',
-  Vector = 'Vector'
+  Vector = 'Vector',
+  Decline = 'Decline',
+  SearchIcon = 'SearchIcon'
 }
 
 export interface IsvgIconProps {
-  nameSvg: keyof typeof svgNameEnum,
+  nameSvg: keyof typeof svgNameEnum;
+  className?: string;
 }
 
 export const SvgIcon: FC<IsvgIconProps> = (props) => {
-  const { nameSvg } = props;
-  
-  return <>
-    {NameSvg[nameSvg]}
-  </>
+  const { nameSvg, className } = props;
+
+  return <div className={className}>
+    {SvgComponents[nameSvg]}
+  </div>
 };
