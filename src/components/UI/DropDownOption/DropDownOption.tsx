@@ -1,4 +1,6 @@
+import "./style.scss";
+
 const DropDownOption = () => {
-  return <div>hello</div>;
+  return <div className="drop-down-option">hello</div>;
 };
 export default DropDownOption;

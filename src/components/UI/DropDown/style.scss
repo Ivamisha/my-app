@@ -1,0 +1,57 @@
+@use "../../../functions" as *;
+
+.drop-down {
+  display: flex;
+  font-weight: 400;
+  flex-direction: column;
+
+  &__icon {
+    transition: 0.1s;
+
+    & > svg {
+      fill: var(--darkGray);
+      padding: toRem(7);
+      box-sizing: content-box;
+
+      &:hover {
+        background-color: var(--lightGray);
+        border-radius: toRem(20);
+        padding: toRem(7);
+        box-sizing: content-box;
+      }
+    }
+
+    &.open {
+      transform: rotate(180deg);
+      transition: 0.1s;
+
+      & > svg {
+        fill: var(--blue);
+      }
+    }
+  }
+
+  &__option-wrapper {
+    border: toRem(1) solid var(--darkGray);
+    box-shadow: 0 0 toRem(26) rgba(233, 237, 243, 0.8);
+    border-radius: toRem(4);
+  }
+
+  &-action {
+    border-radius: toRem(4);
+    border: none;
+    text-align: end;
+    justify-content: flex-end;
+    padding: 0 1rem;
+    display: flex;
+    gap: toRem(5);
+    align-items: center;
+    box-sizing: content-box;
+    min-width: toRem(204);
+    border: none;
+    background: var(--gray);
+    color: var(--black);
+    font-size: toRem(14);
+    height: toRem(40);
+  }
+}

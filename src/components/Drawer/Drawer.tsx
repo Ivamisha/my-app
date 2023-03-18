@@ -1,10 +1,7 @@
 import { FC } from "react";
-
 import { menuItemArray } from "src/constants";
-import logo from "src/assets/png/logo.png";
-
 import { Button, MenuItem } from "../UI";
-
+import logo from "src/assets/png/logo.png";
 import "./style.scss";
 
 const Drawer: FC = () => {
