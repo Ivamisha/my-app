@@ -7,5 +7,17 @@
   height: 100vh;
   width: toRem(240);
   padding: toRem(16) toRem(10);
+  box-sizing: border-box;
   background: var(--secondaryColor);
+
+  &-image {
+    width: toRem(108);
+    height: toRem(28);
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: toRem(40);
+  }
 }

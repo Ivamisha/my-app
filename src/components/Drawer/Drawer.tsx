@@ -8,11 +8,13 @@ import "./style.scss";
 const Drawer: FC = () => {
   return (
     <div className="drawer">
-      <img src={logo} alt="logo" />
+      <img src={logo} alt="logo" className="drawer-image" />
 
-      {menuItemArray.map((item) => (
-        <MenuItem key={item.id} icon={item.icon} text={item.text} />
-      ))}
+      <div className="drawer__list">
+        {menuItemArray.map((item) => (
+          <MenuItem key={item.id} icon={item.icon} text={item.text} />
+        ))}
+      </div>
 
       <Button>Добавить заказ</Button>
 

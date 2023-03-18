@@ -1,0 +1,30 @@
+@use "../../../functions" as *;
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: var(--primaryColor);
+  border-radius: toRem(48);
+  width: toRem(145);
+  height: toRem(40);
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: toRem(5);
+    line-height: toRem(20);
+
+    span:first-child {
+      color: var(--darkGray);
+    }
+
+    span:last-child {
+      color: var(--black);
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+}
