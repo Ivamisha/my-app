@@ -1,0 +1,13 @@
+@use "../../../functions" as *;
+
+.table-row {
+  height: toRem(61);
+  border-bottom: toRem(1) solid var(--lightGray);
+
+  &-td {
+    text-align: start;
+    &:last-of-type {
+      text-align: end;
+    }
+  }
+}

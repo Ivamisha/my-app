@@ -12,6 +12,7 @@ import { ReactComponent as People } from "src/assets/svg/people.svg";
 import { ReactComponent as Vector } from "src/assets/svg/vector.svg";
 import { ReactComponent as Decline } from "src/assets/svg/decline.svg";
 import { ReactComponent as SearchIcon } from "src/assets/svg/search.svg";
+import { ReactComponent as ArrowDown } from "src/assets/svg/arrowDown.svg";
 
 export const SvgComponents: Record<string, JSX.Element> = {
   Settings: <Settings />,
@@ -26,6 +27,7 @@ export const SvgComponents: Record<string, JSX.Element> = {
   Vector: <Vector />,
   Decline: <Decline />,
   SearchIcon: <SearchIcon />,
+  ArrowDown: <ArrowDown />,
 };
 
 export const enum svgNameEnum {
@@ -41,6 +43,7 @@ export const enum svgNameEnum {
   Vector = "Vector",
   Decline = "Decline",
   SearchIcon = "SearchIcon",
+  ArrowDown = "ArrowDown",
 }
 
 export interface IsvgIconProps {

@@ -1,10 +1,14 @@
-import Client from "./page/Client";
+import { Provider } from "react-redux";
+import Client from "./page/Client/Client";
+import store from "./store";
 
 const App = () => {
   return (
-    <div className="App">
-      <Client />
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Client />
+      </div>
+    </Provider>
   );
 };
 
